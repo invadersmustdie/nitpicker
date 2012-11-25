@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "nitpicker"
+
+config = eval(File.read("nitpicker.conf.rb"))
+
+if $0 == __FILE__
+  NitPicker::Master.start(config)
+end
